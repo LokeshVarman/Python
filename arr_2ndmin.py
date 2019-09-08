@@ -1,0 +1,5 @@
+N=int(input())
+a=list(map(int,input().split()))
+b=min(a)
+a.remove(b)
+print(min(a))
