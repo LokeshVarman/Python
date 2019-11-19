@@ -1,3 +1,4 @@
+
 user_name=input("enter name")
 while True:
   emailid=input("enter mail")
@@ -18,10 +19,16 @@ while True:
   if source.isdigit()== False:
     print("Sorry, enter positive/numeric values")
     continue
+    
   else:
-     break
+    break
+s=float(source)
 while True:
   desti=input("enter des kms")
+  d=float(desti)
+  if d<s:
+    print("destina must me greater than source")
+    continue
   if desti.isdigit()== False:
     print("Sorry, enter positive values/numeric ")
     continue
