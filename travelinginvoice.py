@@ -16,10 +16,11 @@ while True:
      break
 while True:
   source=input("enter strt(kms)")
-  if source.isdigit()== False:
-    print("Sorry, enter positive/numeric values")
+  if source.isalnum()== True:
+    print("Sorry, enter numeric values")
     continue
-    
+  if "-" in source:
+    print("sorry,enter positive values")
   else:
     break
 s=float(source)
@@ -29,9 +30,11 @@ while True:
   if d<s:
     print("destina must me greater than source")
     continue
-  if desti.isdigit()== False:
-    print("Sorry, enter positive values/numeric ")
+  if desti.isalnum()== True:
+    print("Sorry, enter numeric values")
     continue
+  if "-" in desti:
+    print("sorry,enter positive values")
   else:
      break
 if source!=desti:
