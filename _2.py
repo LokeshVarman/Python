@@ -1,0 +1,6 @@
+
+a,b,c=[int(x) for x in input().split()]
+if a!=b and b!=c and c!=a:
+	print("yes")
+else:
+  	print("no")
